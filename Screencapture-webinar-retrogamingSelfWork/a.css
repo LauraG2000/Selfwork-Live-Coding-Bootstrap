@@ -1,0 +1,300 @@
+/* Reset globale */
+/* * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} */
+
+/* html, body {
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+} */
+
+/* Corpo pagina */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita scorrimenti orizzontali */
+}
+
+/* Riga principale */
+.background-row {
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    background: url(media/bg-1.jpg) no-repeat center;
+    background-size: cover;
+    margin: 0;
+}
+.background-row1 {
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    background-color: #05004f;
+    background-size: cover;
+    margin: 0;
+}
+.background-row2 {
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    background: url(media/bg-2.jpg) no-repeat center;
+    background-size: cover;
+    margin: 0;
+}
+.background-row3 {
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(46, 0, 103);
+    background-size: cover;
+    margin: 0;
+}
+
+/* annullare padding */
+.row {
+    margin: 0;
+    padding: 0%;
+}
+
+/* Stile per le colonne della griglia */
+.content-box {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+}
+
+/* Pulsante stile */
+.button1 {
+    background: none;
+    border-color: rgb(221, 181, 0);
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.button1 a {
+    text-decoration: none;
+    color: rgb(221, 181, 0);
+
+}
+
+button:hover {
+    background-color: #05004f;
+    color: rgb(221, 181, 0);
+}
+.arcade {
+    width: 380px;
+    height: 400px;
+}
+
+.card {
+    border: none; /* Rimuove il bordo della card */
+    border-radius: 12px; /* Angoli arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombreggiatura */
+    background-color: #05004f;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card-line {
+    background-color: #05004f;
+}
+
+.btn-warning {
+    background-color:rgb(221, 181, 0); 
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #987200; 
+}
+
+a.text-warning:hover {
+    text-decoration: underline;
+}
+
+.modal-content {
+    border-radius: 8px; /* Arrotonda i bordi del modale */
+}
+
+.icon-wrapper {
+    width: 60px; /* Diametro della sfera */
+    height: 60px; /* Diametro della sfera */
+    background-color: rgb(221, 181, 0);
+    border-radius: 50%; /* Rende il contenitore una sfera */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra l'icona */
+}
+/* Dimensione dell'icona calendario */
+.icon {
+    width: 36px;
+    height: 36px;
+}
+/* dimensione icona aulab-futur */
+.aulab-futur {
+    width: 300px;
+    height: 300px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.ore {
+    align-items: center;
+    text-align: center;
+}
+
+.transparent-input {
+    background-color: transparent; /* Sfondo trasparente */
+    color: #ffffff; /* Testo bianco */
+    border: none; /* Rimuove il bordo completo */
+    border-bottom: 1.3px solid rgb(176, 0, 220); /* Linea bianca semi-trasparente */
+    border-radius: 0; /* Rimuove gli angoli smussati */
+    padding: 0.375rem 0.5rem; /* Aggiunge spazio interno */
+}
+
+.transparent-input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Colore bianco semi-trasparente per il placeholder */
+}
+
+.transparent-input:focus {
+    outline: none; /* Rimuove il contorno predefinito */
+    box-shadow: none; /* Evita ombre predefinite */
+}   
+.marco-col {
+    color:rgb(221, 181, 0);
+}
+.marco {
+    width: 200px;
+    height: 300px;
+}
+
+/* card sovrapposta */
+.overlay-card {
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .background-row, .background-row1, .background-row2, .background-row3 {
+        height: auto;
+    }
+    .marco {
+        width: 150px;
+        height: 220px;
+    }
+    .arcade {
+        width: 200px;
+        height: 250px;
+    }
+    .aulab-futur{
+        width: 150px;
+        height: 150px;
+    }
+    .card-query {
+        width: 150px;
+        height: 200px;
+    }
+}
+/* Impostazione predefinita per la card */
+.card-body {
+    font-size: 16px;  /* Impostazione base per il testo */
+  }
+  
+  /* Media Query per schermi più piccoli (max-width: 768px) */
+  @media (max-width: 768px) {
+    .card-body {
+      font-size: 14px;  /* Riduce la dimensione del testo su tablet */
+    }
+    .card-title {
+      font-size: 18px;  /* Riduce la dimensione del titolo */
+    }
+    .fs-3 {
+      font-size: 14px;  /* Riduce la dimensione del testo specifico */
+    }
+    .icon {
+      width: 14px; /* Riduce la dimensione dell'icona */
+      height: 14px; /* Riduce la dimensione dell'icona */
+    }
+  }
+  
+  /* Media Query per schermi molto piccoli (max-width: 576px) */
+  @media (max-width: 576px) {
+    .card-body {
+      font-size: 12px;  /* Riduce ulteriormente la dimensione del testo su dispositivi mobili */
+    }
+    .card-title {
+      font-size: 16px;  /* Riduce ulteriormente la dimensione del titolo */
+    }
+    .fs-3 {
+      font-size: 12px;  /* Riduce la dimensione del testo specifico */
+    }
+    .icon {
+      width: 12px; /* Riduce la dimensione dell'icona */
+      height: 12px; /* Riduce la dimensione dell'icona */
+    }
+  }
+/* Media Query per schermi più piccoli (max-width: 768px) */
+@media (max-width: 768px) {
+    .card-body {
+      font-size: 14px;  /* Riduce la dimensione del testo all'interno della card su tablet */
+    }
+  
+    .card-title {
+      font-size: 18px;  /* Riduce la dimensione del titolo su tablet */
+    }
+  
+    .fs-3 {
+      font-size: 14px;  /* Riduce la dimensione del testo specifico */
+    }
+  
+    .icon {
+      width: 14px; /* Riduce la dimensione dell'icona su schermi più piccoli */
+      height: 14px;
+    }
+  }
+  
+  /* Media Query per schermi molto piccoli (max-width: 576px) */
+  @media (max-width: 576px) {
+    .card-body {
+      font-size: 12px;  /* Riduce ulteriormente la dimensione del testo su dispositivi mobili */
+    }
+  
+    .card-title {
+      font-size: 16px;  /* Riduce ulteriormente la dimensione del titolo su dispositivi mobili */
+    }
+  
+    .fs-3 {
+      font-size: 12px;  /* Riduce ulteriormente la dimensione del testo specifico */
+    }
+  
+    .icon2 {
+      width: 12px; /* Riduce la dimensione dell'icona su schermi molto piccoli */
+      height: 12px;
+    }
+  }
+    
+
+
+
+
+
+.custom-text {
+    text-align: left;        
+    margin: 0;              
+    padding: 0;              
+    line-height: 1.4;        
+    white-space: normal;     
+    display: block;         
+}
